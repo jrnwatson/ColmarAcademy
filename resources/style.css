@@ -1,0 +1,129 @@
+/* animation */
+
+* {
+  transition: all .1s ease-in-out;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+#signIn:hover {
+  opacity: .5;
+}
+
+#signIn a:hover {
+  opacity: 1;
+}
+
+/* styling */
+
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  color: #292525;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+h2 {
+  line-height: 1.9rem;
+  font-size: 1.6rem;
+}
+
+.hero, .hero div, nav, nav div {
+  display: flex;
+}
+
+nav, nav div {
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 32px;
+  width: auto;
+  margin-left: 24px;
+}
+
+nav {
+  height: 64px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25rem;
+  background-color: white;
+}
+
+#logoTypeOne {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.navLinks {
+  font-size: 1.1rem;
+}
+
+.navLinks span {
+  margin: 0 8px;
+}
+
+#signIn {
+  font-size: 1.1rem;
+  background-color: #FFD147;
+  margin-right: 24px;
+  padding: 10px 15px 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#signIn a {
+  text-decoration: none;
+}
+
+.hero {
+  padding: 32px 24px;
+  background-color: #F1EEEE;
+}
+
+.hero img {
+  width: 60%;
+  height: auto;
+}
+
+#heroImage {
+  background-image: url("../resources/images/banner.jpg");
+  background-position: right;
+  width: 60%;
+  height: 500px;
+  background-size: cover;
+}
+
+#heroText {
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 24px;
+  width: 40%;
+}
+
+#heroText span {
+  margin: 12px 0px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  padding: 18px 46px 16px 46px;
+  background-color: #FFD147;
+  box-shadow: none;
+}
