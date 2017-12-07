@@ -16,20 +16,34 @@ a:hover {
   opacity: 1;
 }
 
+.learningCard:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all .3s ease-in-out;
+}
+
 /* styling */
 
 html {
   font-size: 16px;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #292525;
 }
 
 a {
   color: black;
   cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+span, p {
+  line-height: 1.5rem;
 }
 
 h1 {
+  line-height: 3rem;
   font-size: 2.8rem;
   font-weight: 700;
 }
@@ -39,7 +53,7 @@ h2 {
   font-size: 1.6rem;
 }
 
-.hero, .hero div, nav, nav div {
+.hero, #heroText, nav, nav div, .featured, .features, .featureCard {
   display: flex;
 }
 
@@ -51,23 +65,32 @@ nav, nav div {
 nav img {
   height: 32px;
   width: auto;
-  margin-left: 24px;
 }
 
 nav {
+  box-sizing: border-box;
+  padding: 0px 24px;
   height: 64px;
   font-family: 'Nunito', sans-serif;
   font-size: 1.25rem;
   background-color: white;
 }
 
-#logoTypeOne {
+.mobileNav {
+  display: none;
+}
+
+#logoTypeAlt {
   font-weight: 700;
   margin-left: 5px;
 }
 
 .navLinks {
   font-size: 1.1rem;
+}
+
+.navLinks a {
+  text-decoration: underline;
 }
 
 .navLinks span {
@@ -77,7 +100,6 @@ nav {
 #signIn {
   font-size: 1.1rem;
   background-color: #FFD147;
-  margin-right: 24px;
   padding: 10px 15px 8px 15px;
   border-radius: 3px;
   cursor: pointer;
@@ -89,32 +111,34 @@ nav {
 }
 
 .hero {
-  padding: 32px 24px;
   background-color: #F1EEEE;
 }
 
-.hero img {
+#heroImage {
   width: 60%;
-  height: auto;
+  box-sizing: border-box;
+  padding: 32px 24px 32px 24px;
 }
 
-#heroImage {
-  background-image: url("../resources/images/banner.jpg");
-  background-position: right;
-  width: 60%;
-  height: 500px;
-  background-size: cover;
+#heroText {
+  width: 40%;
+  box-sizing: border-box;
+  padding: 0 24px 0 16px;
+}
+
+#heroImage img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 #heroText {
   flex-direction: column;
   justify-content: center;
-  margin-left: 24px;
-  width: 40%;
 }
 
-#heroText span {
-  margin: 12px 0px;
+#heroText h2 {
+  margin: 22px 0px 28px 0;
 }
 
 .button {
@@ -126,4 +150,203 @@ nav {
   padding: 18px 46px 16px 46px;
   background-color: #FFD147;
   box-shadow: none;
+}
+
+.featured {
+  margin-bottom: 32px;
+}
+
+.testimonial {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.features {
+  width: 40%;
+  box-sizing: border-box;
+  padding-top: 16px;
+  flex-direction: column;
+}
+
+.testimonial img, .testimonial video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 32px 24px 32px 24px;
+}
+
+.testimonial .text {
+  box-sizing: border-box;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial p {
+  margin: 16px 0;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.featureCard {
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.featureCard .image {
+  width: 35%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.featureCard .text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 16px 16px 16px 0;
+}
+
+.featureCard .text span {
+  margin: 8px 0 12px 0;
+}
+
+.featureCard img {
+  width: 100%;
+  height: auto;
+}
+
+.callout {
+  background-color: #FFD147;
+}
+
+.learning {
+  width: 100%;
+  background-color: #F1EEEE;
+  padding-bottom: 32px;
+}
+
+#startlearning {
+  text-align: center;
+  padding: 32px 0 16px 0;
+}
+
+.learning .container {
+  display: flex;
+  margin: 0 72px;
+}
+
+.learningCard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 16px;
+  box-shadow: 0 3px 30px rgba(0,0,0,0.16);
+  transition: all .3s ease-in-out;
+}
+
+.learningCard .text {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.learningCard img {
+  max-width: 100%;
+  height: auto;
+}
+
+.learningCard span {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  margin-bottom: 6px;
+}
+
+.learningCard h2 {
+  margin-bottom: 10px;
+}
+
+#thesisexhibit {
+  padding: 32px 0 0 0;
+  text-align: center;
+}
+
+#thesisfeatures {
+  padding-top: 32px;
+}
+
+footer {
+  border-top: 1px solid gray;
+  box-sizing: border-box;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: underline;
+  margin-left: 8px;
+}
+
+.desktopHide {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mobileNav {
+    display: flex;
+  }
+
+  .mobileHide, .learningCard img, .learningCard span, .learningCard p {
+    display: none;
+  }
+
+  .desktopHide {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  #heroText, #heroImage, .features, .featureCard .image, .featureCard .text, #thesisVid {
+    width: 100%;
+  }
+
+  #heroText {
+    margin-bottom: 32px;
+  }
+
+  .featureCard {
+    flex-direction: column;
+  }
+
+  .featureCard .text {
+    padding: 0 24px 16px 24px;
+  }
+
+  .callout {
+    background-color: white;
+  }
+
+  .learning .container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .learningCard {
+    margin: 8px 16px;
+  }
+
+  .learningCard h2 {
+    margin: 0;
+  }
+
 }

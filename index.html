@@ -4,15 +4,15 @@
   <title>Colmar Academy</title>
   <link href="./resources/reset.css" type="text/css" rel="stylesheet">
   <link href="./resources/style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet">
 </head>
 
 <body>
-  <nav>
+  <nav class="desktopNav mobileHide">
     <div>
       <img src="./resources/images/ic-logo.svg">
-      <span id="logoTypeOne">Colmar</span>
-      <span id="logoTypeTwo">Academy</span>
+      <span id="logoTypeAlt">Colmar</span>
+      <span>Academy</span>
     </div>
     <div class="navLinks">
       <span>On <a href="#">campus</a></span>
@@ -21,9 +21,18 @@
       <span id="signIn"><a>Sign In</a></span>
     </div>
   </nav>
+  <nav class="mobileNav">
+    <img src="./resources/images/ic-logo.svg">
+    <img src="./resources/images/ic-on-campus.svg">
+    <img src="./resources/images/ic-online.svg">
+    <img src="./resources/images/ic-login.svg">
+  </nav>
   <!-- hero section -->
   <div class="hero">
     <div id="heroImage">
+      <div class="container">
+        <img src="./resources/images/banner.jpg">
+      </div>
     </div>
     <div id="heroText">
       <span><h1>Learn Something New Everyday</h1></span>
@@ -32,42 +41,152 @@
     </div>
   </div>
   <!-- featured section -->
-  <div>
-    <div>
+  <div class="featured">
+    <div class="testimonial mobileHide">
+      <img src="./resources/images/information-main.jpg">
+      <div class="text">
+        <h1>It doesn't hurt to keep practicing</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."</p>
+        <span class="label">–Emanuel Sr Strategist at Hiring.com</span>
+      </div>
     </div>
-    <div>
-      <div>
+    <div class="features">
+      <div class="featureCard">
+        <div class="image">
+          <img src="./resources/images/information-orientation.jpg" class="mobileHide">
+          <img src="./resources/images/information-orientation-mobile.jpg" class="desktopHide">
+        </div>
+        <div class="text">
+          <h2>Orientation Date</h2>
+          <span>Tues 10/11 & Wed 10/12: 8am-3pm</span>
+          <a>Read More</a>
+        </div>
       </div>
-      <div>
+      <div class="featureCard">
+        <div class="image">
+          <img src="./resources/images/information-campus.jpg" class="mobileHide">
+          <img src="./resources/images/information-campus-mobile.jpg" class="desktopHide">
+        </div>
+        <div class="text">
+          <h2>Our Campus</h2>
+          <span>Fine which campus is close by you</span>
+          <a>Read More</a>
+        </div>
       </div>
-      <div>
+      <div class="featureCard callout">
+        <div class="image">
+          <img src="./resources/images/information-guest-lecture.jpg" class="mobileHide">
+          <img src="./resources/images/information-guest-lecture-mobile.jpg" class="desktopHide">
+        </div>
+        <div class="text">
+          <h2>Our Guest Lecture</h2>
+          <span>Join a keynote with Oliver Sack about music in medical treatment</span>
+          <a>Read More</a>
+        </div>
       </div>
     </div>
   </div>
   <!-- start learning -->
-  <div>
-    <div class="learningCard">
+  <div class="learning">
+    <h1 id="startlearning">Start Learning</h1>
+    <div class="container">
+      <div class="learningCard">
+        <img src="./resources/images/course-software.jpg">
+        <div class="text">
+          <h2>Software Engineering</h2>
+          <span>Courses</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+      </div>
+      <div class="learningCard">
+        <img src="./resources/images/course-computer-art.jpg">
+        <div class="text">
+          <h2>Computer Art</h2>
+          <span>Courses</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+      </div>
+      <div class="learningCard">
+        <img src="./resources/images/course-design.jpg">
+        <div class="text">
+          <h2>Design</h2>
+          <span>Courses</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+      </div>
     </div>
-    <div class="learningCard">
-    </div>
-    <div class="learningCard">
-    </div>
-    <div class="learningCard">
-    </div>
-    <div class="learningCard">
-    </div>
-    <div class="learningCard">
+    <div class="container" id="secondContainer">
+      <div class="learningCard">
+        <img src="./resources/images/course-data.jpg">
+        <div class="text">
+          <h2>Data</h2>
+          <span>Courses</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+      </div>
+      <div class="learningCard">
+        <img src="./resources/images/course-business.jpg">
+        <div class="text">
+          <h2>Business</h2>
+          <span>Courses</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+      </div>
+      <div class="learningCard">
+        <img src="./resources/images/course-marketing.jpg">
+        <div class="text">
+          <h2>Marketing</h2>
+          <span>Courses</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+      </div>
     </div>
   </div>
   <!-- thesis section -->
   <div>
-    <div>
-    </div>
-    <div>
+    <h1 id="thesisexhibit">Thesis Exhibit</h1>
+    <div class="featured">
+      <div class="testimonial" id="thesisVid">
+        <video controls>
+          <source src="./resources/videos/thesis.mp4" type="video/mp4">
+            Browser does not support video
+          </video>
+        <div class="text">
+          <h1>Reimagine Urban</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."</p>
+        </div>
+      </div>
+      <div class="features mobileHide" id="thesisfeatures">
+        <div class="featureCard callout">
+          <div class="image">
+            <img src="./resources/images/thesis-fisma.jpg">
+          </div>
+          <div class="text">
+            <h2>Fisma: Design and Prototype</h2>
+            <span>Designer showcase of new product prototype</span>
+          </div>
+        </div>
+        <div class="featureCard">
+          <div class="image">
+            <img src="./resources/images/thesis-now-and-then.jpg">
+          </div>
+          <div class="text">
+            <h2>Now and Then</h2>
+            <span>Research study about New York</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- footer -->
   <footer>
+    <div>
+      ©2016 Colmar Academy. All rights reserved
+    </div>
+    <div class="mobileHide">
+      <a>Terms</a>
+      <a>Privacy</a>
+    </div>
   </footer>
 </body>
 </html>
